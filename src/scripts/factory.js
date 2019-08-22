@@ -2,13 +2,10 @@
 const blogHTML = {
     pointsOfInterest() {
         return `
-            <h3 id=title>Points of Interest</h3>
-            <div id=list>
-                
-            </div>
-            <div>
-                <button id="createBTN">Add New Point Of Interest</button>
-            </div>
+            <h1 id="title">Mira's Travel Blog</h1>
+            <h3 id="list--title">Points of Interest</h3>
+            <div id="listContainer">list container</div>
+            <button id="createBTN">Add New Point Of Interest</button>
         `
     },
     addNewPOIForm() {
@@ -44,15 +41,15 @@ const blogHTML = {
              </div>
         `
     },
-    // creats object out of input values
-    createPOIList(pointOfIntrestObject) {
+    // creates object out of input values
+    createPOIList(pointOfInterestObject) {
         return `
-            <section id="pointOfIntrest">Point Of Interest: ${pointOfIntrestObject.pointOfIntrest}</section>
-            <section id="description">Description: ${pointOfIntrestObject.decription}</section>
-            <section id="cost">Cost: ${pointOfIntrestObject.cost}</section>
-            <section id="location">Location: ${pointOfIntrestObject.location}</section>
-            <button id="editButton_${pointOfIntrestObject.id}">Edit</button>
-            <button id="deleteButton_${pointOfIntrestObject.id}">Delete</button>
+            <section id="pointOfIntrest">Point Of Interest: ${pointOfInterestObject.pointOfIntrest}</section>
+            <section id="description">Description: ${pointOfInterestObject.decription}</section>
+            <section id="cost">Cost: ${pointOfInterestObject.cost}</section>
+            <section id="location">Location: ${pointOfInterestObject.location}</section>
+            <button id="editButton_${pointOfInterestObject.id}">Edit</button>
+            <button id="deleteButton_${pointOfInterestObject.id}">Delete</button>
         `
     }
 }

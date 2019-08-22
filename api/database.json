@@ -16,5 +16,12 @@
       "visa_required": false
     }
   ],
-  "interests": []
+  "interests": [
+    {
+      "Point Of Interest": 1,
+      "Description": "restaurant",
+      "Cost": "0.00",
+      "Location": "France"
+    }
+  ]
 }
